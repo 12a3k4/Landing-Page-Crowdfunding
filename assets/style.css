@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+:root {
+  --green-light: #A5DD9B;
+  --green-dark: #65C18C;
+  --yellow-light: #F6F193;
+  --background-dark: #1d1d1d;
+  --text-white: #ffffff;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.heading span {
+  color: var(--green-light);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--green-light);
+  color: var(--text-white);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--green-dark);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+}
+
+header .logo i {
+  color: var(--green-light);
+  margin-right: 0.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+header nav a:hover {
+  color: var(--green-light);
+}
+
+/* Mobile Menu */
+#menu-bar {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    border-top: 2px solid var(--green-light);
+  }
+
+  header nav.active {
+    display: flex;
+  }
+
+  header nav a {
+    padding: 1rem;
+    border-bottom: 1px solid var(--green-light);
+  }
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.home h3 {
+  font-size: 2rem;
+  color: var(--text-white);
+}
+
+.home p {
+  font-size: 1rem;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.steps .box {
+  background-color: var(--background-dark);
+  padding: 2rem;
+  border: 1px solid var(--green-light);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.steps .box i {
+  font-size: 3rem;
+  color: var(--green-light);
+  margin-bottom: 1rem;
+}
+
+.steps .box h3 {
+  color: var(--text-white);
+  font-size: 1.2rem;
+}
+
+/* Fasilitas Section */
+.fasilitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.fasilitas .box {
+  background-color: black;
+  border: 2px solid var(--green-light);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: 30rem;
+}
+
+.fasilitas .box i {
+  color: var(--green-light);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fasilitas .box h3 {
+  font-size: 1.4rem;
+  color: var(--text-white);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 2rem;
+}
+
+footer .credit {
+  color: var(--text-white);
+  font-size: 1rem;
+}
+
+footer .credit span {
+  color: var(--green-light);
+}

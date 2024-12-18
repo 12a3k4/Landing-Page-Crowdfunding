@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-gray-100">
+    <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+        <a href="#" class="text-xl font-bold flex items-center text-gray-700">
+            <i class="fa-solid fa-house mr-2"></i>Crowdfunding Project
+        </a>
+        <div id="menu-bar" class="fas fa-bars hidden"></div>
+        <nav class="space-x-4 hidden md:flex">
+            <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+            <a href="#steps" class="text-gray-700 hover:text-blue-500">Sasaran Kami</a>
+            <a href="#fasilitas" class="text-gray-700 hover:text-blue-500">Rencana Keberlanjutan</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-500">Tentang Kami</a>
+            <a href="https://maps.app.goo.gl/4tetXhdFUc1W5QHeA" class="text-gray-700 hover:text-blue-500">Lokasi</a>
+        </nav>
+    </header>
+
+    <main class="mt-8">
+        <section id="home" class="flex flex-wrap items-center px-6 py-8 bg-white shadow-md rounded-lg">
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-bold text-gray-800">Bantu Kami Bangun Pusat Pendidikan untuk Anak-Anak Kurang Mampu</h3>
+                <p class="mt-4 text-gray-600">Banyak anak-anak kurang mampu yang tidak memiliki akses ke pendidikan yang memadai, sehingga menghambat perkembangan mereka.
+                Bantu kami membangun pusat pendidikan yang menyediakan fasilitas belajar, pelatihan, dan dukungan psikologis untuk 500 anak-anak kurang mampu di daerah tertentu.
+                </p>
+                <div class="mt-4 space-x-4">
+                    <a href="https://maps.app.goo.gl/4tetXhdFUc1W5QHeA" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Hubungi Kami</a>
+                    <a href="https://udana.id" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Info Selengkapnya</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                <img src="assets/images/cfd.jpg" alt="" class="rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section id="steps" class="mt-12 px-6 py-8 bg-white shadow-md rounded-lg">
+            <h1 class="text-2xl font-bold text-center text-gray-800">Sasaran <span class="text-blue-500">Kami</span></h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+                <div class="text-center">
+                    <i class="fa-solid fa-school text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Membangun pusat pendidikan dengan fasilitas lengkap</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-business-time text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Menyediakan pelatihan keterampilan hidup</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-user-doctor text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Memberikan dukungan psikologis</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-shield text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Meningkatkan kesadaran masyarakat tentang pentingnya pendidikan</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="fasilitas" class="mt-12 px-6 py-8 bg-white shadow-md rounded-lg">
+            <h1 class="text-2xl font-bold text-center text-gray-800">Rencana <span class="text-blue-500">Keberlanjutan</span></h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="text-center bg-gray-50 p-4 rounded shadow">
+                    <i class="fa-solid fa-school text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Mengembangkan program pendidikan</h3>
+                </div>
+                <div class="text-center bg-gray-50 p-4 rounded shadow">
+                    <i class="fa-solid fa-child text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Meningkatkan jumlah anak-anak yang dilayan</h3>
+                </div>
+                <div class="text-center bg-gray-50 p-4 rounded shadow">
+                    <i class="fa-solid fa-sitemap text-blue-500 text-3xl"></i>
+                    <h3 class="mt-2 text-lg font-semibold text-gray-700">Mengembangkan kerjasama dengan organisasi/perorangan</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mt-12 px-6 py-8 bg-white shadow-md rounded-lg">
+            <h1 class="text-2xl font-bold text-center text-gray-800">Tentang <span class="text-blue-500">Kami</span></h1>
+            <div class="flex flex-col items-center mt-6">
+                <img src="assets/images/logo-vertical.png" alt="" class="w-24 h-24 full shadow">
+                <h3 class="mt-4 text-lg font-semibold text-gray-700">Udana</h3>
+                <p class="mt-2 text-gray-600">Udana adalah platform urun dana bisnis yang hadir untuk membuka akses pendanaan dan investasi bagi semua kalangan.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-12 px-6 py-4 bg-gray-800 text-white text-center">
+        <div class="flex justify-center space-x-4">
+            <a href="https://www.instagram.com/a.a.said_18" class="text-white hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ali-akbar-said-063644217/" class="text-white hover:text-gray-400"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="mt-4">©2024 <span class="text-blue-500">ALI AKBAR SAID.</span> All Rights Reserved.</p>
+    </footer>
+
+    <a href="#home" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"><i class="fas fa-angle-up"></i></a>
+</body>
+</html>
